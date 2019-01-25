@@ -1,0 +1,44 @@
+{
+  "name": "site_web_boot",
+  "version": "1.0.0",
+  "description": "Just a simple website using Twitter Bootstrap 4 for represent Morocco and its features to improve its abilitty to organize CAF ....",
+  "main": "app",
+  "scripts": {
+    "start": "webpack-dev-server --target=web --env.mode=development --open --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Boostrap",
+    "Static",
+    "Website",
+    "Football",
+    "Morocco",
+    "CAF"
+  ],
+  "author": "Oussama EL AMRANI and Amine BELFKIH",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "util": "^0.11.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "img-loader": "^3.0.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

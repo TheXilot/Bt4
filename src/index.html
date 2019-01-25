@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap 4</title>
+    <link rel="stylesheet" href="bootstrap.bundle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+
+        function fixNav(){
+        var scoX = window.scrollY
+        if(scoX > 20){
+           $('nav').addClass('bg-navbar')
+        }
+        else{
+            $('nav').removeClass('bg-navbar')
+            $('nav').add('transparent')
+        }
+            
+    }
+    </script>
+</head>
+
+<body onscroll="fixNav()">
+
+    <header>
+        <nav class="navbar  fixed-top  navbar-expand-md">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">Maroc</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="fa fa-bars" aria-hidden="true"></span>
+
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron bg-jumbo bg-success">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-8">
+                        <h1 class="display-4 text-light text-uppercase">Hello, world!</h1>
+                        <p class="lead text-light">This is a simple hero unit, a simple jumbotron-style component for
+                            calling
+                            extra attention
+                            to featured content or information.</p>
+                        <hr class="my-4 bg-light">
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <img src="https://raw.githubusercontent.com/OussamaELAMRANI/bootstrap_tp1/master/src/components/assets/player.png"
+                            class="float-right d-none d-lg-block d-xl-block" style="height: 90%;" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main class="container">
+        <article class="row mb-4">
+            <div class="col-sm">
+                <div class="card hotel boite" style="width: 18rem;">
+                    <div class="section-link__wrapper">
+                        <div class="section-link__content">
+                            <div class="section-link__title">Hôtels et hébergement</div>
+                            <div class="section-link__desc">Informations utiles</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card transport boite" style="width: 18rem;" style="background: url('../images/gride/hotel.jpg') no-repeat;">
+                    <div class="section-link__wrapper">
+                        <div class="section-link__content">
+                            <div class="section-link__title">Hôtels et hébergement</div>
+                            <div class="section-link__desc">Informations utiles</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card bg-secondary" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Stades</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="row mb-4">
+            <div class="col-8">
+                <div class="card bg-secondary">
+                    <div class="card-body">
+                        <h5 class="card-title">zkaak f marackech</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quic text to build on the card title and make up the bulk of
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa sed tempore itaque
+                            the card's content.
+                            the card's content.
+                        </p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card bg-dark" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+        <div class="dropdown-divider"></div>
+
+        <article class='row mb-4'>
+            <div class="col-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-5 text-center offset-1">
+                <h3 class="text-uppercase text-primary mp-2">
+                    Lorem ipsum dolor sit amet consectetur.
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur animi deleniti voluptates iste
+                    harum perferendis tenetur tempora accusantium magni dolorum, ullam voluptate nisi! Quisquam
+                    perspiciatis sunt neque tempore velit magnam!
+                    harum perferendis tenetur tempora accusantium magni dolorum, ullam voluptate nisi! Quisquam
+                    perspiciatis sunt neque tempore velit magnam!
+                </p>
+                <button class="btn btn-outline-primary"> More !</button>
+            </div>
+        </article>
+        <div class="dropdown-divider"></div>
+
+        <section id="integrations" class="center">
+            <div class="content container">
+                <h4>Integrations</h4>
+                <h2>Yes, we integrate with that</h2>
+                <p class="lg">
+                    From community plugins to premium supported integrations, Ionic has your
+                    covered. Unlock unmatched native power, speed, and core functionality
+                    across all your apps.
+                </p>
+                <a href="https://ionicframework.com/integrations" class="cta">See Integrations</a>
+            </div>
+            <ul id="integration-list" class="integration-list">
+                <li><img src="https://ionicframework.com/img/homepage/integrations/paypal-integration.png" alt="Paypal"
+                        class="l" style="transform: translate3d(976.688px, 215.688px, 0px);"></li>
+                <li><img src="https://ionicframework.com/img/homepage/integrations/heroku-integration.png" alt="Heroku"
+                        class="l" style="transform: translate3d(731.858px, 170.917px, 0px);"></li>
+                <li><img src="https://ionicframework.com/img/homepage/integrations/couchbase-integration.png" alt="Couchbase"
+                        class="s" style="transform: translate3d(596.219px, 92.8012px, 0px);"></li>
+                <li><img src="https://ionicframework.com/img/homepage/integrations/aws-amplify-integration.png" alt="AWS Amplify"
+                        class="s" style="transform: translate3d(294.474px, 90.0938px, 0px);"></li>
+                <li><img src="https://ionicframework.com/img/homepage/integrations/android-fingerprint-integration.png"
+                        alt="Android Fingerprint" class="l" style="transform: translate3d(94.7763px, 184.293px, 0px);"></li>
+                <li><img src="https://ionicframework.com/img/homepage/integrations/apple-faceid-integration.png" alt="Apple FaceID"
+                        class="m" style="transform: translate3d(-148.376px, 51.1568px, 0px);"></li>
+                <li><img src="https://ionicframework.com/img/homepage/integrations/active-directory-integration.png"
+                        alt="Active Directory" class="m" style="transform: translate3d(-325.107px, 177.742px, 0px);"></li>
+                <li><img src="https://ionicframework.com/img/homepage/integrations/apple-pay-integration.png" alt="ApplePay"
+                        class="s" style="transform: translate3d(-417.062px, 71.2349px, 0px);"></li>
+                <li><img src="https://ionicframework.com/img/homepage/integrations/firebase-integration.png" alt="Firebase"
+                        class="l" style="transform: translate3d(-727.253px, 68.8106px, 0px);"></li>
+                <li><img src="https://ionicframework.com/img/homepage/integrations/google-maps-integration.png" alt="Google Maps"
+                        class="l" style="transform: translate3d(-961.282px, 142.916px, 0px);"></li>
+                <li><img src="https://ionicframework.com/img/homepage/integrations/ios-camera-plugin-integration.png"
+                        alt="Camera" class="m" style="transform: translate3d(-1119.38px, 166.133px, 0px);"></li>
+                <li><img src="https://ionicframework.com/img/homepage/integrations/sqlite-integration.png" alt="SQLite"
+                        class="m" style="transform: translate3d(-1300.08px, 243.291px, 0px);"></li>
+                <li><img src="https://ionicframework.com/img/homepage/integrations/stripe-integration.png" alt="Stripe"
+                        class="m" style="transform: translate3d(-1482.02px, 191.207px, 0px);"></li>
+                <li><img src="https://ionicframework.com/img/homepage/integrations/touch-id-ios-integration.png" alt="TouchID"
+                        class="s" style="transform: translate3d(1266.08px, 117.989px, 0px);"></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>Here you can use rows and columns here to organize your footer content.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script>
+        window.flow = function () {
+            var sizes = ["s", "m", "l"],
+                iconLWidth = 256,
+                container = document.getElementById("integration-list"),
+                icons = document.querySelectorAll("#integration-list img"),
+                resizeTimer,
+                w, h;
+
+            // debounce the re-init so it doesn't totally freak out while draging
+            window.addEventListener('resize', resizeDebounce);
+
+            function resizeDebounce() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(init, 250);
+            }
+
+            function init() {
+                w = container.offsetWidth;
+                h = container.offsetHeight;
+
+                icons.forEach(function (icon, i) {
+                    var size = sizes[Math.ceil(Math.random() * 3) - 1];
+                    TweenMax.set(
+                        icon, {
+                            attr: {
+                                class: size
+                            },
+                            y: R(50, h - 150),
+                            x: R(w, w + 50)
+                        }
+                    );
+                    animate(icon, i);
+                });
+            }
+
+            // animate x and y values at different rates
+            function animate(element, i) {
+                TweenMax.to(
+                    element,
+                    R(110, 120), {
+                        x: -1500,
+                        ease: Linear.easeNone,
+                        repeat: -1,
+                        delay: -115 / icons.length * i
+                    }
+                );
+
+                TweenMax.to(
+                    element,
+                    R(6, 16), {
+                        y: '+=50',
+                        repeat: -1,
+                        yoyo: true,
+                        ease: Sine.easeInOut,
+                        delay: R(-16, -6)
+                    }
+                );
+            };
+
+            function R(min, max) {
+                return min + Math.random() * (max - min)
+            };
+
+            return {
+                init: init
+            }
+        }().init();
+    </script>
+</body>
+
+</html>

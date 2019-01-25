@@ -1,0 +1,145 @@
+// Import Font or Icons
+
+//import Custom Variables
+@import 'variables';
+
+// Boostratp v4
+@import "~bootstrap/scss/bootstrap";
+
+.bg-navbar {
+    border: 1px solid rgba(34, 36, 38, .15);
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+    background-color: #fff;
+    animation: mymove 1s;
+
+}
+
+@keyframes mymove {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bg-jumbo {
+    // background: url("../images/slides/jumbo-bg.jpg") center center no-repeat;
+
+    background-size: cover;
+    border-radius: 0;
+    height: 400px;
+    margin-bottom: 60px;
+
+}
+
+#bg-image-2 {
+    height: 400px;
+    background: url("../images/2.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#integrations {
+    padding-top: 20px;
+    padding-bottom: 4px;
+}
+
+section.center {
+    text-align: center;
+}
+
+#integrations .integration-list {
+    position: relative;
+    height: 360px;
+    display: block;
+    margin: 0 0 48px;
+    padding: 0;
+    position: relative;
+    //opacity: 0;
+    // -webkit-animation: fadeIn 1s 1s forwards;
+    // animation: fadeIn 1s 1s forwards;
+}
+
+#integrations .integration-list li {
+    list-style: none;
+    position: absolute;
+}
+
+#integrations .integration-list img {
+    position: absolute;
+    border-radius: 50%;
+}
+
+img.m {
+    width: 96px;
+}
+
+img.l {
+    width: 128px;
+}
+
+img.s {
+    width: 64px;
+}
+
+.card {
+    height: 200px;
+}
+
+.card-title {
+    text-transform: uppercase;
+}
+
+.transport {
+    background: url('../images/gride/tgv.jpg') no-repeat;
+
+}
+
+.hotel {
+    background: url('../images/gride/hotel.jpg') no-repeat;
+
+}
+
+.boite {
+    background-position: 50%;
+    background-size: cover;
+    transition: transform 1s;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 1s;
+    }
+}
+
+.section-link {
+    &__wrapper {
+        position: absolute;
+        color: white;
+        text-align: center;
+        z-index: 1;
+        top: 55%;
+        left: 0;
+        height: 1px;
+        width: 100%;
+    }
+
+    &__desc,
+    &__title {
+        font-weight: 700;
+        position: absolute;
+        width: 100%;
+        padding: 0 10px;
+        overflow: hidden;
+    }
+
+    &__title {
+        margin: 2rem auto;
+        font-size: 1.4rem;
+        line-height: 1.07142857;
+        color: inherit;
+        bottom: calc(100% + .75rem);
+        margin: 0;
+        line-height: 1.25;
+        max-height: 2.5em;
+    }
+}
