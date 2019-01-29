@@ -8,141 +8,112 @@
     <title>Boostrap 4</title>
     <link rel="stylesheet" href="bootstrap.bundle.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
 
-        function fixNav(){
-            var scoX = window.scrollY
-            if(scoX > 20){
-            $('nav').addClass('bg-navbar')
-            }
-            else{
-                $('nav').removeClass('bg-navbar')
-                $('nav').add('transparent')
-            }
-        }
-        //pour fixer le probleme d'affichage du texte de NavBar sur les media md,xs
-        function fixNavColor(){
-            if($('#btnNav').hasClass('collapsed')){
-                $('nav.navbar').addClass('bg-dark');
-            }else{
-                $('nav.navbar').removeClass('bg-dark');
-            }
-        }
-    </script>
+    <!--Add Emoji ! https://afeld.github.io/emoji-css/ -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
 </head>
 
-<body onscroll="fixNav()">
+<body>
 
-    <header>
-        <nav class="navbar fixed-top navbar-expand-md">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#">
-                <img src="./images/logo.png" alt="logo" height="40" />
-            </a>
+<header>
+    <nav class="navbar fixed-top  bg-navbar  navbar-expand-md">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="logo" height="40"/>
+        </a>
 
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
-                id="btnNav" onclick="fixNavColor();">
-                <span class="fa fa-bars" aria-hidden="true"></span>
-            </button>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler bg-light collapsed" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar"
+                id="btnNav">
+            <span class="fa fa-bars" aria-hidden="true"></span>
+        </button>
 
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span class="fa fa-home" aria-hidden="true"></span> Accueil
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fa fa-futbol-o" aria-hidden="true"></i>
-                            Matchs
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fa fa-info" aria-hidden="true"></i>
-                            A propos de nous
-                        </a>
-                    </li>
-                </ul>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="fa fa-home" aria-hidden="true"></span> Accueil
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                        Matchs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-info" aria-hidden="true"></i>
+                        A propos de nous
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron bg-jumbo bg-success">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-8">
+                    <h1 class="display-4 text-light text-uppercase">Coupe d'Afrique 2019</h1>
+                    <p class="lead text-light">Tous pour l'organisation marocaine de cette cérémonie internationale</p>
+                    <hr class="my-4 bg-light">
+                    </p>
+                </div>
+                <div class="col-4">
+                    <img src="https://raw.githubusercontent.com/OussamaELAMRANI/bootstrap_tp1/master/src/components/assets/player.png"
+                         class="float-right d-none d-lg-block d-xl-block" style="height: 90%;" alt="">
+                </div>
+
             </div>
-        </nav>
-        <div class="jumbotron bg-jumbo bg-success">
-            <div class="container mt-4">
-                <div class="row">
-                    <div class="col-8">
-                        <h1 class="display-4 text-light text-uppercase">Coupe d'Afrique 2019</h1>
-                        <p class="lead text-light">Tous pour l'organisation marocaine de cette cérémonie internationale</p>
-                        <hr class="my-4 bg-light">
-                        </p>
-                    </div>
-                    <div class="col-4">
-                        <img src="https://raw.githubusercontent.com/OussamaELAMRANI/bootstrap_tp1/master/src/components/assets/player.png"
-                            class="float-right d-none d-lg-block d-xl-block" style="height: 90%;" alt="">
-                    </div>
+        </div>
+    </div>
+</header>
 
+
+<main class="container">
+    <!-- hotels -->
+    <article class="row justify-content-center mb-5 ">
+        <div class="col-sm-10 offset-sm-2 col-md-6 col-lg-4 offset-md-0 mb-2">
+            <div class="card hotel boite" style="width: 18rem;">
+                <div class="section-link__wrapper">
+                    <div class="section-link__content">
+                        <div class="section-link__title">Hôtels et hébergement</div>
+                        <div class="section-link__desc">Informations utiles</div>
+                    </div>
                 </div>
             </div>
         </div>
-
-    </header>
-
-
-    <main class="container">
-        <!-- hotels -->
-        <article class="row justify-content-center mb-5 ">
-            <div class="col-sm-10 offset-sm-2 col-md-6 col-lg-4 offset-md-0 mb-2">
-                <div class="card hotel boite" style="width: 18rem;">
-                    <div class="section-link__wrapper">
-                        <div class="section-link__content">
-                            <div class="section-link__title">Hôtels et hébergement</div>
-                            <div class="section-link__desc">Informations utiles</div>
-                        </div>
+        <!-- Transport -->
+        <div class="col-sm-10 offset-sm-2 col-md-6 col-lg-4 offset-md-0  mb-2">
+            <div class="card transport boite" style="width: 18rem;">
+                <div class="section-link__wrapper">
+                    <div class="section-link__content">
+                        <div class="section-link__title">Hôtels et hébergement</div>
+                        <div class="section-link__desc">Informations utiles</div>
                     </div>
                 </div>
             </div>
-            <!-- Transport -->
-            <div class="col-sm-10 offset-sm-2 col-md-6 col-lg-4 offset-md-0  mb-2">
-                <div class="card transport boite" style="width: 18rem;">
-                    <div class="section-link__wrapper">
-                        <div class="section-link__content">
-                            <div class="section-link__title">Hôtels et hébergement</div>
-                            <div class="section-link__desc">Informations utiles</div>
-                        </div>
+        </div>
+        <!-- Stade -->
+        <div class="col-sm-10 offset-sm-2 col-md-6 col-lg-4 offset-md-0  mb-2">
+            <div class="card stade boite" style="width: 18rem;">
+                <div class="section-link__wrapper">
+                    <div class="section-link__content">
+                        <div class="section-link__title">STADES</div>
+                        <div class="section-link__desc">Informations utiles</div>
                     </div>
                 </div>
             </div>
-            <!-- Stade -->
-            <div class="col-sm-10 offset-sm-2 col-md-6 col-lg-4 offset-md-0  mb-2">
-                <div class="card stade boite" style="width: 18rem;">
-                    <div class="section-link__wrapper">
-                        <div class="section-link__content">
-                            <div class="section-link__title">STADES</div>
-                            <div class="section-link__desc">Informations utiles</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <article class="row justify-content-center mb-5 ">
-            <!-- Marrakech -->
-            <div class="col-sm-10 offset-sm-2 col-md-8 offset-md-0 col-lg-8 mb-2">
-                <div class="card bg-secondary">
-                    <div class="card histo boite">
-                        <div class="section-link__wrapper">
-                            <div class="section-link__content">
-                                <div class="section-link__title">Parc du football et du divertissement</div>
-                                <div class="section-link__desc">Parc de Rabat</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Parcs -->
-            <div class="col-sm-10 offset-sm-2 col-md-4 offset-md-0 col-lg-4 mb-2">
-                <div class="card parc boite" style="width: 18rem;">
+        </div>
+    </article>
+    <article class="row justify-content-center mb-5 ">
+        <!-- Marrakech -->
+        <div class="col-sm-10 offset-sm-2 col-md-8 offset-md-0 col-lg-8 mb-2">
+            <div class="card bg-secondary">
+                <div class="card histo boite">
                     <div class="section-link__wrapper">
                         <div class="section-link__content">
                             <div class="section-link__title">Parc du football et du divertissement</div>
@@ -151,219 +122,224 @@
                     </div>
                 </div>
             </div>
-
-        </article>
-
-        <div class="dropdown-divider"></div>
-
-        <article class='row mb-5'>
-            <div class="col-md-6  col-sm-12">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VUbNKlYISv4"></iframe>
+        </div>
+        <!-- Parcs -->
+        <div class="col-sm-10 offset-sm-2 col-md-4 offset-md-0 col-lg-4 mb-2">
+            <div class="card parc boite" style="width: 18rem;">
+                <div class="section-link__wrapper">
+                    <div class="section-link__content">
+                        <div class="section-link__title">Parc du football et du divertissement</div>
+                        <div class="section-link__desc">Parc de Rabat</div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 text-center">
-                <h3 class="text-uppercase text-primary mp-2">Lions de l'Atlas </h3>
-                <p>
-                    En janvier 2017, la CAN débute pour le Maroc sur une défaite face à la République Démocratique du
-                    Congo. Avec ce très mauvais début, l'équipe marocaine enchaîne sur une rencontre face au Togo.
-                    L'équipe adverse marquera le premier but. C'est alors une grande déception des supporters marocains
-                    qui prend position, avant que les Lions de l'Atlas se rattraperont sur un score final de 3-1. Le
-                    troisième match a lieu le 24 janvier face à la Côte d'Ivoire.
-                </p>
-                <button class="btn btn-outline-primary"> Suites ...</button>
-            </div>
-        </article>
+        </div>
 
-    </main>
-    <section id="integrations" class="center mb-3">
-        <div class="content ">
-            <h4>Integrations</h4>
-            <h2>Yes, we integrate with that</h2>
-            <p class="lg">
-                From community plugins to premium supported integrations, Ionic has your
-                covered. Unlock unmatched native power, speed, and core functionality
-                across all your apps.
+    </article>
+
+    <div class="dropdown-divider"></div>
+
+    <article class='row mb-5'>
+        <div class="col-md-6  col-sm-12">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VUbNKlYISv4"></iframe>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center">
+            <h3 class="text-uppercase text-primary mp-2">Lions de l'Atlas </h3>
+            <p>
+                En janvier 2017, la CAN débute pour le Maroc sur une défaite face à la République Démocratique du
+                Congo. Avec ce très mauvais début, l'équipe marocaine enchaîne sur une rencontre face au Togo.
+                L'équipe adverse marquera le premier but. C'est alors une grande déception des supporters marocains
+                qui prend position, avant que les Lions de l'Atlas se rattraperont sur un score final de 3-1. Le
+                troisième match a lieu le 24 janvier face à la Côte d'Ivoire.
             </p>
-            <a href="https://ionicframework.com/integrations" class="cta">See Integrations</a>
+            <button class="btn btn-outline-primary"> Suites ...</button>
         </div>
-        <div class="dropdown-divider"></div>
+    </article>
 
-        <ul id="integration-list" class="integration-list">
-            <li>
-                <img src="./images/sponsores/iam.png" alt="iam" class="l" style="transform: translate3d(976.688px, 215.688px, 0px);">
-            </li>
+</main>
+<section id="integrations" class="center mb-3">
+    <div class="content ">
+        <h4>Integrations</h4>
+        <h2>Yes, we integrate with that</h2>
+        <p class="lg">
+            From community plugins to premium supported integrations, Ionic has your
+            covered. Unlock unmatched native power, speed, and core functionality
+            across all your apps.
+        </p>
+        <a href="https://ionicframework.com/integrations" class="cta">See Integrations</a>
+    </div>
+    <div class="dropdown-divider"></div>
 
-            <li><img src="./images/sponsores/orange.png" alt="Orange" class="l" style="transform: translate3d(731.858px, 170.917px, 0px);"></li>
-            <li><img src="./images/sponsores/ocp.png" alt="OCP" class="s" style="transform: translate3d(596.219px, 92.8012px, 0px);"></li>
-            <li><img src="./images/sponsores/coca.png" alt="coca cola" class="s" style="transform: translate3d(294.474px, 90.0938px, 0px);"></li>
-            <li><img src="./images/sponsores/caf.png" alt="CAF" class="l" style="transform: translate3d(94.7763px, 184.293px, 0px);"></li>
-            <li><img src="./images/sponsores/snrt.jpg" alt="snrt" class="m" style="transform: translate3d(-148.376px, 51.1568px, 0px);"></li>
-            <li><img src="./images/sponsores/air.png" alt="air" class="m" style="transform: translate3d(-325.107px, 177.742px, 0px);"></li>
-            <li><img src="./images/sponsores/ministere.jpg" alt="ministere" class="s" style="transform: translate3d(-417.062px, 71.2349px, 0px);"></li>
-            <li><img src="./images/sponsores/oncf.jpg" alt="oncf" class="l" style="transform: translate3d(-727.253px, 68.8106px, 0px);"></li>
-            <li><img src="./images/sponsores/cdg.jpg" alt="CDG" class="l" style="transform: translate3d(-961.282px, 142.916px, 0px);"></li>
-            <li><img src="./images/sponsores/ibis.png" alt="ibis" class="m" style=""></li>
-        </ul>
-    </section>
-    <!-- Footer -->
-    <footer class="page-footer font-small bg-footer pt-4">
+    <ul id="integration-list" class="integration-list">
+        <li>
+            <img src="./images/sponsores/iam.png" alt="iam" class="l"
+                 style="transform: translate3d(976.688px, 215.688px, 0px);">
+        </li>
 
-        <!-- Footer Links -->
-        <div class="container text-center text-light text-md-left">
-
-            <!-- Grid row -->
-            <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-
-                    <!-- Content -->
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns here to organize your footer content.</p>
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none pb-3">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
+        <li><img src="./images/sponsores/orange.png" alt="Orange" class="l"
+                 style="transform: translate3d(731.858px, 170.917px, 0px);"></li>
+        <li><img src="./images/sponsores/ocp.png" alt="OCP" class="s"
+                 style="transform: translate3d(596.219px, 92.8012px, 0px);"></li>
+        <li><img src="./images/sponsores/coca.png" alt="coca cola" class="s"
+                 style="transform: translate3d(294.474px, 90.0938px, 0px);"></li>
+        <li><img src="./images/sponsores/caf.png" alt="CAF" class="l"
+                 style="transform: translate3d(94.7763px, 184.293px, 0px);"></li>
+        <li><img src="./images/sponsores/snrt.jpg" alt="snrt" class="m"
+                 style="transform: translate3d(-148.376px, 51.1568px, 0px);"></li>
+        <li><img src="./images/sponsores/air.png" alt="air" class="m"
+                 style="transform: translate3d(-325.107px, 177.742px, 0px);"></li>
+        <li><img src="./images/sponsores/ministere.jpg" alt="ministere" class="s"
+                 style="transform: translate3d(-417.062px, 71.2349px, 0px);"></li>
+        <li><img src="./images/sponsores/oncf.jpg" alt="oncf" class="l"
+                 style="transform: translate3d(-727.253px, 68.8106px, 0px);"></li>
+        <li><img src="./images/sponsores/cdg.jpg" alt="CDG" class="l"
+                 style="transform: translate3d(-961.282px, 142.916px, 0px);"></li>
+        <li><img src="./images/sponsores/ibis.png" alt="ibis" class="m" style=""></li>
+    </ul>
+</section>
+<!-- Footer -->
+<footer class="page-footer font-small bg-footer pt-4">
+    <!-- Footer Links -->
+    <div class="container text-center text-light text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+                <!-- Content -->
+                <h5 class="text-uppercase">COUPE D'AFRIQUE 2019</h5>
+                <p>We are together <i class="em em-flag-ma"></i> to improve to all the world <i
+                        class="em em-earth_africa"></i>
+                    than we have the <i class="em em-moneybag"></i> power and the ability to organize <i
+                            class="em em-checkered_flag"></i>
+                    the CAF on the best condition <i class="em em---1"></i>
+                </p>
             </div>
-            <!-- Grid row -->
-
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <!-- Links -->
+                <h5 class="text-uppercase">Infos</h5>
+                <ul class="list-unstyled text-light">
+                    <li>
+                        <a href="#!">Maroc</a>
+                    </li>
+                    <li>
+                        <a href="#!">CAF - 2019</a>
+                    </li>
+                    <li>
+                        <a href="#!">Contactez-nous</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <!-- Links -->
+                <h5 class="text-uppercase">Liens rapides</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#" class="text-success">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-success">Matches</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-success">Sponsores</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
         </div>
-        <!-- Footer Links -->
-        <div class="container">
-            <div class="dropdown-divider"></div>
-        </div>
-        <!-- Copyright -->
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <div class="container">
+        <div class="dropdown-divider"></div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-light">© 2019 Copyright:
+        <a href="#" class="text-info">www.caf.ma</a>
+    </div>
+</footer>
+<!-- Footer -->
 
-        <div class="footer-copyright text-center py-3 text-light">© 2019 Copyright: <a href="#">bcd.com</a></div>
-    </footer>
-    <!-- Footer -->
+<script src="app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script>
+    window.flow = function () {
+        var sizes = ["s", "m", "l"],
+            iconLWidth = 256,
+            container = document.getElementById("integration-list"),
+            icons = document.querySelectorAll("#integration-list img"),
+            resizeTimer,
+            w, h;
 
-    <script src="app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        // debounce the re-init so it doesn't totally freak out while draging
+        window.addEventListener('resize', resizeDebounce);
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script>
-        window.flow = function () {
-            var sizes = ["s", "m", "l"],
-                iconLWidth = 256,
-                container = document.getElementById("integration-list"),
-                icons = document.querySelectorAll("#integration-list img"),
-                resizeTimer,
-                w, h;
+        function resizeDebounce() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(init, 250);
+        }
 
-            // debounce the re-init so it doesn't totally freak out while draging
-            window.addEventListener('resize', resizeDebounce);
+        function init() {
+            w = container.offsetWidth;
+            h = container.offsetHeight;
 
-            function resizeDebounce() {
-                clearTimeout(resizeTimer);
-                resizeTimer = setTimeout(init, 250);
-            }
-
-            function init() {
-                w = container.offsetWidth;
-                h = container.offsetHeight;
-
-                icons.forEach(function (icon, i) {
-                    var size = sizes[Math.ceil(Math.random() * 3) - 1];
-                    TweenMax.set(
-                        icon, {
-                            attr: {
-                                class: size
-                            },
-                            y: R(50, h - 150),
-                            x: R(w, w + 50)
-                        }
-                    );
-                    animate(icon, i);
-                });
-            }
-
-            // animate x and y values at different rates
-            function animate(element, i) {
-                TweenMax.to(
-                    element,
-                    R(110, 120), {
-                        x: -1500,
-                        ease: Linear.easeNone,
-                        repeat: -1,
-                        delay: -115 / icons.length * i
+            icons.forEach(function (icon, i) {
+                var size = sizes[Math.ceil(Math.random() * 3) - 1];
+                TweenMax.set(
+                    icon, {
+                        attr: {
+                            class: size
+                        },
+                        y: R(50, h - 150),
+                        x: R(w, w + 50)
                     }
                 );
+                animate(icon, i);
+            });
+        }
 
-                TweenMax.to(
-                    element,
-                    R(6, 16), {
-                        y: '+=50',
-                        repeat: -1,
-                        yoyo: true,
-                        ease: Sine.easeInOut,
-                        delay: R(-16, -6)
-                    }
-                );
-            };
+        // animate x and y values at different rates
+        function animate(element, i) {
+            TweenMax.to(
+                element,
+                R(110, 120), {
+                    x: -1500,
+                    ease: Linear.easeNone,
+                    repeat: -1,
+                    delay: -115 / icons.length * i
+                }
+            );
 
-            function R(min, max) {
-                return min + Math.random() * (max - min)
-            };
+            TweenMax.to(
+                element,
+                R(6, 16), {
+                    y: '+=50',
+                    repeat: -1,
+                    yoyo: true,
+                    ease: Sine.easeInOut,
+                    delay: R(-16, -6)
+                }
+            );
+        };
 
-            return {
-                init: init
-            }
-        }().init();
-    </script>
+        function R(min, max) {
+            return min + Math.random() * (max - min)
+        };
+
+        return {
+            init: init
+        }
+    }().init();
+</script>
 </body>
 
 </html>

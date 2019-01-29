@@ -1,184 +1,169 @@
 // Import Font or Icons
-
-
 //import Custom Variables
 @import 'variables';
-
 // Boostratp v4
 @import "~bootstrap/scss/bootstrap";
-.nav-link{
-    color: #fff;
+
+.nav-link {
+  color: $light;
 }
 
 .bg-navbar {
-    border: 1px solid rgba(34, 36, 38, .15);
-    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+  border: 1px solid rgba(34, 36, 38, .15);
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+  animation: mymove 1s;
+
+  &__light {
     background-color: #fff;
-    animation: mymove 1s;
-    a{
-        color: black;
+    a.nav-link {
+      color: black;
     }
+  }
+  &__dark {
+    background-color: $dark;
+    a.nav-link {
+      color: $light;
+    }
+  }
 }
 
 @keyframes mymove {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .bg-jumbo {
-    background: linear-gradient(rgba(232, 232, 232, 0.04), rgba(27, 66, 17, 0.13)), url(../images/slides/jumbo-bg3.jpg) center top no-repeat;
-    background-size: cover;
-    border-radius: 0;
-    margin-bottom: 60px;
-    clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+  background: linear-gradient(rgba(232, 232, 232, 0.04), rgba(27, 66, 17, 0.13)), url(../images/slides/jumbo-bg3.jpg) center top no-repeat;
+  background-size: cover;
+  border-radius: 0;
+  margin-bottom: 60px;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
 }
 
 #bg-image-2 {
-    height: 400px;
-    background: url("../images/2.jpg") center center no-repeat;
-    background-size: cover;
+  height: 400px;
+  background: url("../images/2.jpg") center center no-repeat;
+  background-size: cover;
 }
 
 #integrations {
-    padding-top: 20px;
-    padding-bottom: 4px;
-    background: url(../images/art2.png) repeat;
-    background-size: contain;
-    // .content {
-    //     background: url(../images/art1.png) repeat;
-    //     background-size: contain;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  background: url(../images/art2.png) repeat;
+  background-size: contain;
 
-    // }
+  .integration-list {
+    position: relative;
+    height: 360px;
+    display: block;
+    margin: 0 0 48px;
+    padding: 0;
 
-    .integration-list {
-        position: relative;
-        height: 360px;
-        display: block;
-        margin: 0 0 48px;
-        padding: 0;
-        position: relative;
-
-        li {
-            list-style: none;
-            position: absolute;
-            background: #ddd;
-
-        }
-
-        img {
-            position: absolute;
-            // border-radius: 50%;
-            box-shadow: 0 6px 24px rgba(0, 0, 0, .1);
-        }
+    li {
+      list-style: none;
+      position: absolute;
+      background: #ddd;
 
     }
+    img {
+      position: absolute;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, .1);
+    }
+
+  }
 }
 
 section.center {
-    text-align: center;
+  text-align: center;
 }
 
-img.m {
+img {
+  &.m {
     width: 96px;
-    // height: 96px;
-}
 
-img.l {
+  }
+  &.l {
     width: 128px;
-    // height: 128px;
-
-}
-
-img.s {
+  }
+  &.s {
     width: 64px;
-    // height: 64px;
+  }
 }
 
 .card {
-    height: 200px;
-}
-
-.card-title {
-    text-transform: uppercase;
+  height: 200px;
 }
 
 .transport {
-    background: url('../images/gride/tgv.jpg') no-repeat;
-
+  background: url('../images/gride/tgv.jpg') no-repeat;
 }
 
 .hotel {
-    background: url('../images/gride/hotel.jpg') no-repeat;
-
+  background: url('../images/gride/hotel.jpg') no-repeat;
 }
 
 .stade {
-    background: url('../images/gride/stade.jpg') no-repeat;
-
+  background: url('../images/gride/stade.jpg') no-repeat;
 }
 
 .parc {
-    background: url('../images/gride/parc.jpg') no-repeat;
-
+  background: url('../images/gride/parc.jpg') no-repeat;
 }
 
 .histo {
-    background: url('../images/gride/histo.jpg') no-repeat;
-
+  background: url('../images/gride/histo.jpg') no-repeat;
 }
 
 .boite {
-    background-position: 50%;
-    background-size: cover;
-    transition: transform 1s;
+  background-position: 50%;
+  background-size: cover;
+  transition: transform 1s;
 
-    &:hover {
-        transform: scale(1.1);
-        transition: transform 1s;
-    }
+  &:hover {
+    transform: scale(1.05);
+    transition: transform .4s;
+  }
 }
 
 .section-link {
-    &__wrapper {
-        position: absolute;
-        color: white;
-        text-align: center;
-        z-index: 1;
-        top: 55%;
-        left: 0;
-        height: 1px;
-        width: 100%;
-    }
+  &__wrapper {
+    position: absolute;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    top: 55%;
+    left: 0;
+    height: 1px;
+    width: 100%;
+  }
 
-    &__desc,
-    &__title {
-        font-weight: 700;
-        position: absolute;
-        width: 100%;
-        padding: 0 10px;
-        overflow: hidden;
-    }
+  &__desc,
+  &__title {
+    font-weight: 700;
+    position: absolute;
+    width: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+  }
 
-    &__title {
-        margin: 2rem auto;
-        font-size: 1.4rem;
-        line-height: 1.07142857;
-        color: inherit;
-        bottom: calc(100% + .75rem);
-        margin: 0;
-        line-height: 1.25;
-        max-height: 2.5em;
-    }
+  &__title {
+    margin: 2rem auto;
+    font-size: 1.4rem;
+    line-height: 1.07142857;
+    color: inherit;
+    bottom: calc(100% + .75rem);
+    margin: 0;
+    line-height: 1.25;
+    max-height: 2.5em;
+  }
 }
 
 .bg-footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(88, 84, 60, 0.75)), url(../images/art2.png) center center repeat;
-    background-size: contain;
-    // border-top: 10px solid rgba(0, 8, 3, 0.767);
-    box-shadow: 1px 2px 10px 10px #ddd;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(88, 84, 60, 0.75)), url(../images/art2.png) center center repeat;
+  background-size: contain;
+  box-shadow: 1px 2px 10px 10px #ddd;
 }
