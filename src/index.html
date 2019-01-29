@@ -11,35 +11,43 @@
     <script>
 
         function fixNav(){
-        var scoX = window.scrollY
-        if(scoX > 20){
-           $('nav').addClass('bg-navbar')
+            var scoX = window.scrollY
+            if(scoX > 20){
+            $('nav').addClass('bg-navbar')
+            }
+            else{
+                $('nav').removeClass('bg-navbar')
+                $('nav').add('transparent')
+            }
         }
-        else{
-            $('nav').removeClass('bg-navbar')
-            $('nav').add('transparent')
+        //pour fixer le probleme d'affichage du texte de NavBar sur les media md,xs
+        function fixNavColor(){
+            if($('#btnNav').hasClass('collapsed')){
+                $('nav.navbar').addClass('bg-dark');
+            }else{
+                $('nav.navbar').removeClass('bg-dark');
+            }
         }
-            
-    }
     </script>
 </head>
 
 <body onscroll="fixNav()">
 
     <header>
-        <nav class="navbar  fixed-top  navbar-expand-md">
+        <nav class="navbar fixed-top navbar-expand-md">
             <!-- Brand -->
             <a class="navbar-brand" href="#">
                 <img src="./images/logo.png" alt="logo" height="40" />
             </a>
 
             <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+                id="btnNav" onclick="fixNavColor();">
                 <span class="fa fa-bars" aria-hidden="true"></span>
             </button>
 
             <!-- Navbar links -->
-            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
@@ -55,18 +63,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fa fa-info" aria-hidden="true"></i>
-                            Apropos de nous
+                            A propos de nous
                         </a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="jumbotron bg-jumbo bg-success">
-            <div class="container">
+            <div class="container mt-4">
                 <div class="row">
                     <div class="col-8">
                         <h1 class="display-4 text-light text-uppercase">Coupe d'Afrique 2019</h1>
-                        <p class="lead text-light">Tous pour l'organisation marociane de cette ceremonie internationnal</p>
+                        <p class="lead text-light">Tous pour l'organisation marocaine de cette cérémonie internationale</p>
                         <hr class="my-4 bg-light">
                         </p>
                     </div>

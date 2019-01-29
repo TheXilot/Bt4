@@ -1,17 +1,23 @@
 // Import Font or Icons
 
+
 //import Custom Variables
 @import 'variables';
 
 // Boostratp v4
 @import "~bootstrap/scss/bootstrap";
+.nav-link{
+    color: #fff;
+}
 
 .bg-navbar {
     border: 1px solid rgba(34, 36, 38, .15);
     box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
     background-color: #fff;
     animation: mymove 1s;
-
+    a{
+        color: black;
+    }
 }
 
 @keyframes mymove {
@@ -25,7 +31,7 @@
 }
 
 .bg-jumbo {
-    background: linear-gradient(rgba(232, 232, 232, 0.04), rgba(27, 66, 17, 0.13)), url(../images/slides/jumbo-bg1.jpg) center top no-repeat;
+    background: linear-gradient(rgba(232, 232, 232, 0.04), rgba(27, 66, 17, 0.13)), url(../images/slides/jumbo-bg3.jpg) center top no-repeat;
     background-size: cover;
     border-radius: 0;
     margin-bottom: 60px;
