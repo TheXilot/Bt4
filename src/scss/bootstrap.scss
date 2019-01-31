@@ -55,6 +55,7 @@
   padding-bottom: 4px;
   background: url(../images/art2.png) repeat;
   background-size: contain;
+  overflow: hidden;
 
   .integration-list {
     position: relative;
@@ -167,8 +168,13 @@ img {
   background-size: contain;
   box-shadow: 1px 2px 10px 10px #ddd;
 }
-.map{
+
+.map {
   background-color: transparent;
   border: none;
   height: auto;
+}
+
+.modal-body {
+  padding: 0;
 }

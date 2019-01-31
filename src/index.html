@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap 4</title>
+    <title>CAF Maroc </title>
     <link rel="stylesheet" href="bootstrap.bundle.css" type="text/html">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -80,8 +80,8 @@
             <div class="card hotel boite" style="width: 18rem;">
                 <div class="section-link__wrapper">
                     <div class="section-link__content">
-                        <div class="section-link__title">Hôtels et hébergement</div>
-                        <div class="section-link__desc">Informations utiles</div>
+                        <div class="section-link__title text-capitalize">Hôtels et hébergement</div>
+                        <div class="section-link__desc text-capitalize">Informations utiles</div>
                     </div>
                 </div>
             </div>
@@ -91,8 +91,8 @@
             <div class="card transport boite" style="width: 18rem;">
                 <div class="section-link__wrapper">
                     <div class="section-link__content">
-                        <div class="section-link__title">Hôtels et hébergement</div>
-                        <div class="section-link__desc">Informations utiles</div>
+                        <div class="section-link__title text-capitalize">Moyens de transport</div>
+                        <div class="section-link__desc text-capitalize">Informations utiles</div>
                     </div>
                 </div>
             </div>
@@ -102,8 +102,8 @@
             <div class="card stade boite" style="width: 18rem;">
                 <div class="section-link__wrapper">
                     <div class="section-link__content">
-                        <div class="section-link__title">STADES</div>
-                        <div class="section-link__desc">Informations utiles</div>
+                        <div class="section-link__title text-capitalize">STADES</div>
+                        <div class="section-link__desc text-capitalize">Informations utiles</div>
                     </div>
                 </div>
             </div>
@@ -116,8 +116,8 @@
                 <div class="card histo boite">
                     <div class="section-link__wrapper">
                         <div class="section-link__content">
-                            <div class="section-link__title">Parc du football et du divertissement</div>
-                            <div class="section-link__desc">Parc de Rabat</div>
+                            <div class="section-link__title text-capitalize"> monument historique</div>
+                            <div class="section-link__desc text-capitalize">Parc de Rabat</div>
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,10 @@
 
     <div class="dropdown-divider mb-5"></div>
 
-    <article class="row mb-5 text-center">
+    <article class="row mb-5 text-center font-weight-bold">
+        <h3 class="text-capitalize  text-muted">
+            Monuments et sites remarquables du Maroc
+        </h3>
         <div class="col-md-12  col-sm-12">
             <img src="./images/map.png" alt="" usemap="#Map" class="map img-fluid" id="mapy"/>
             <map name="Map" id="Map">
@@ -196,14 +199,13 @@
 </main>
 <section id="integrations" class="center mb-3">
     <div class="content ">
-        <h4>Integrations</h4>
+        <h4>Sponsores</h4>
         <h2>Yes, we integrate with that</h2>
         <p class="lg">
-            From community plugins to premium supported integrations, Ionic has your
-            covered. Unlock unmatched native power, speed, and core functionality
-            across all your apps.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam doloribus eligendi, exercitationem,
+            labore minima neque
         </p>
-        <a href="https://ionicframework.com/integrations" class="cta">See Integrations</a>
+        <!--<a href="#" class="cta">See Integrations</a>-->
     </div>
     <div class="dropdown-divider"></div>
 
@@ -236,21 +238,16 @@
 </section>
 <!-- Modals -->
 <!-- Modal -->
-<div class="modal fade" id="popUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="popUpModal" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg  modal-dialog-centered" role="dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
+            <!--<div class="modal-header">-->
+            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+            <!--<span aria-hidden="true">&times;</span>-->
+            <!--</button>-->
+            <!--</div>-->
             <div class="modal-body">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
@@ -323,12 +320,14 @@
 </footer>
 <!-- Footer -->
 
-<script src="app.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Responsive-Image-Maps-image-map-js/image-map.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+<script src="app.js"></script>
+
 <script>
     //code permettant de remplir le body du modal a partir du ficher x.html contenu dans folder modal/
     $(document).ready(function () {
@@ -342,73 +341,7 @@
     jQuery(function ($) {
         $('img[usemap]').imageMap();
     });
-    window.flow = function () {
-        var sizes = ["s", "m", "l"],
-            iconLWidth = 256,
-            container = document.getElementById("integration-list"),
-            icons = document.querySelectorAll("#integration-list img"),
-            resizeTimer,
-            w, h;
 
-        // debounce the re-init so it doesn't totally freak out while draging
-        window.addEventListener('resize', resizeDebounce);
-
-        function resizeDebounce() {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(init, 250);
-        }
-
-        function init() {
-            w = container.offsetWidth;
-            h = container.offsetHeight;
-
-            icons.forEach(function (icon, i) {
-                var size = sizes[Math.ceil(Math.random() * 3) - 1];
-                TweenMax.set(
-                    icon, {
-                        attr: {
-                            class: size
-                        },
-                        y: R(50, h - 150),
-                        x: R(w, w + 50)
-                    }
-                );
-                animate(icon, i);
-            });
-        }
-
-        // animate x and y values at different rates
-        function animate(element, i) {
-            TweenMax.to(
-                element,
-                R(110, 120), {
-                    x: -1500,
-                    ease: Linear.easeNone,
-                    repeat: -1,
-                    delay: -115 / icons.length * i
-                }
-            );
-
-            TweenMax.to(
-                element,
-                R(6, 16), {
-                    y: '+=50',
-                    repeat: -1,
-                    yoyo: true,
-                    ease: Sine.easeInOut,
-                    delay: R(-16, -6)
-                }
-            );
-        };
-
-        function R(min, max) {
-            return min + Math.random() * (max - min)
-        };
-
-        return {
-            init: init
-        }
-    }().init();
 </script>
 </body>
 
