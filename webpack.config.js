@@ -114,6 +114,10 @@ module.exports = {
             template: './src/contact.html',
             filename: './contact.html',
         }),
+        new HtmlWebPackPlugin({
+            template: './src/hotels.html',
+            filename: './hotels.html',
+        }),
 
 
         // new MiniCssExtractPlugin({

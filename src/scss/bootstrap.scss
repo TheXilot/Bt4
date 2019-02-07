@@ -199,6 +199,7 @@ header video {
   z-index: 0;
   transform: translateX(-50%) translateY(-50%);
 }
+
 header .container {
   position: relative;
   z-index: 2;
@@ -218,7 +219,7 @@ header .overlay {
 main#contactus {
   //position: absolute;
   background-color: #fff;
-  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
   z-index: 3;
   right: 33%;
   left: 33%;
@@ -230,15 +231,26 @@ main#contactus {
 
 @media (pointer: coarse) and (hover: none) and (max-device-width: 700px) {
   header {
-    background: url('../images/bg-contact.jpg')  no-repeat center center scroll;
+    background: url('../images/bg-contact.jpg') no-repeat center center scroll;
   }
   header video {
     display: none;
   }
   main#contactus {
     background-color: #fff;
-    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
     border-radius: .28571429rem;
     bottom: 10%;
   }
+}
+
+@import "procuct_card";
+
+.bg-hotel {
+  background: linear-gradient(rgba(232, 232, 232, 0.04), rgba(27, 66, 17, 0.13)), url(../images/hotels-cover.jpg) center bottom no-repeat;
+  background-size: cover;
+  height: 600px;
+  border-radius: 0;
+  margin-bottom: 60px;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
 }
