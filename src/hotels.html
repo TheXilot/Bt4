@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Hebergement - CAF </title>
+    <title>Hébergement - CAF </title>
     <link rel="stylesheet" href="bootstrap.bundle.css" type="text/html">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -42,89 +42,142 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fa fa-info" aria-hidden="true"></i>
-                        A propos de nous
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="/contact.html">
                         <i class=" fa fa-volume-control-phone" aria-hidden="true"></i>
                         Contactez-nous
                     </a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-bed" aria-hidden="true"></i>
+                        Hebergement
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-info" aria-hidden="true"></i>
+                        A propos de nous
+                    </a>
+                </li>
+
             </ul>
         </div>
     </nav>
-    <!--<div class="overlay"></div>-->
-
-    <div class="jumbotron bg-hotel bg-success" style="background-image: ">
+    <div class="jumbotron bg-hotel bg-success">
         <div class="container mt-4">
             <div class="row">
-                <div class="col-8">
+                <div class="col-12 text-center">
                     <h1 class="display-4 text-light text-uppercase">Coupe d'Afrique 2019</h1>
                     <p class="lead text-light">Tous pour l'organisation marocaine de cette cérémonie internationale</p>
                     <hr class="my-4 bg-light">
-                    </p>
                 </div>
             </div>
         </div>
-        <!--<div class="container h-100">-->
-        <!--<div class="d-flex h-100 text-center align-items-center">-->
-        <!--<div class="w-100 text-white">-->
-        <!--<h1 class="display-3">Contactez nous</h1>-->
-        <!--<p class="lead mb-0">CAF 2019</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
+    </div>
 </header>
 
 <div class="container">
+
+    <nav aria-label="breadcrumb" class="mt-4">
+        <ol class="breadcrumb rounded-pill bg-light text-info">
+            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="#">Hébergement</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Hotels</li>
+        </ol>
+    </nav>
+    <div class="row justify-content-end">
+        <div class="col-sm-12 col-md-8 align-middle">
+            <div class="row">
+                <div class=" col-3">
+                    <p class="p-sm-0 ">
+                        Trier ou chercher par:
+                    </p>
+                </div>
+                <div class="col-2">
+                    <button class="btn-sm btn btn-success">
+                        search
+                    </button>
+                </div>
+                <div class="col-5">
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">MAD</span>
+                        </div>
+                        <input type="number" class="form-control" placeholder="1000" min="200" max="10000">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-warning btn-sm dropdown-toggle" id="dropdownMenuOffset"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            trie
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">A-Z</a>
+                            <a class="dropdown-item" href="#">Z-A</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="input-group input-group-sm">
+                        <input type="text" aria-label="" placeholder="Ville (Tanger, Fes ...)" class="form-control">
+                        <input type="text" aria-label="" placeholder="Nom (Ibiza, Helton ...)" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+
     <div class="row">
         <div class="col-md-4">
             <div class="product-item">
                 <div class="pi-img-wrapper">
-                    <img src="http://keenthemes.com/assets/bootsnipp/k1.jpg" class="img-fluid"
-                         alt="Berry Lace Dress">
+                    <img src="images/hotels/paradise_hotels.jpg" class="img-fluid">
                     <div>
                         <a href="#" class="btn">Zoom</a>
                         <a href="#" class="btn">View</a>
                     </div>
                 </div>
-                <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-                <div class="pi-price">$29.00</div>
-                <a href="javascript:;" class="btn add2cart">Add to cart</a>
-                <div class="sticker sticker-new"></div>
+                <h3><a href="#">Paradise, Hotel a Agadir</a></h3>
+                <div class="pi-price">699 <sup>.99</sup> MAD</div>
+                <a href="" class="btn add2cart">Add to cart</a>
+                <!--<div class="sticker sticker-new"></div>-->
             </div>
         </div>
         <div class="col-md-4">
             <div class="product-item">
                 <div class="pi-img-wrapper">
-                    <img src="http://keenthemes.com/assets/bootsnipp/k2.jpg" class="img-fluid"
-                         alt="Berry Lace Dress">
+                    <img src="images/hotels/kesh_house.jpg" class="img-fluid"/>
                     <div>
                         <a href="#" class="btn">Zoom</a>
                         <a href="#" class="btn">View</a>
                     </div>
                 </div>
-                <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-                <div class="pi-price">$29.00</div>
-                <a href="javascript:;" class="btn add2cart">Add to cart</a>
+                <h3><a href="#">Riad Puchka Marrakech Medina</a></h3>
+                <div class="pi-price">609 <sup>.99</sup> MAD</div>
+                <a href="" class="btn add2cart">Add to cart</a>
             </div>
         </div>
         <div class="col-md-4">
             <div class="product-item">
                 <div class="pi-img-wrapper">
-                    <img src="http://keenthemes.com/assets/bootsnipp/k3.jpg" class="img-fluid"
+                    <img src="images/hotels/casa-hotel.jpg" class="img-fluid"
                          alt="Berry Lace Dress">
                     <div>
                         <a href="#" class="btn">Zoom</a>
                         <a href="#" class="btn">View</a>
                     </div>
                 </div>
-                <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-                <div class="pi-price">$29.00</div>
-                <a href="javascript:;   " class="btn add2cart">Add to cart</a>
+                <h3><a href="#">Barceló Casablanca</a></h3>
+                <div class="pi-price">999 <sup>.99</sup> MAD</div>
+                <a href="#" class="btn add2cart">Add to cart</a>
             </div>
         </div>
     </div>
@@ -132,52 +185,51 @@
         <div class="col-md-4">
             <div class="product-item">
                 <div class="pi-img-wrapper">
-                    <img src="http://keenthemes.com/assets/bootsnipp/k1.jpg" class="img-fluid"
-                         alt="Berry Lace Dress">
+                    <img src="images/hotels/ryad-alya.jpg" class="img-fluid">
                     <div>
                         <a href="#" class="btn">Zoom</a>
                         <a href="#" class="btn">View</a>
                     </div>
                 </div>
-                <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-                <div class="pi-price">$29.00</div>
-                <a href="javascript:;" class="btn add2cart">Add to cart</a>
+                <h3><a href="#">Ryad Ayda - FES</a></h3>
+                <div class="pi-price">799 <sup>.99</sup> MAD</div>
+                <a href="#" class="btn add2cart">Add to cart</a>
                 <div class="sticker sticker-new"></div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="product-item">
                 <div class="pi-img-wrapper">
-                    <img src="http://keenthemes.com/assets/bootsnipp/k2.jpg" class="img-fluid"
+                    <img src="images/hotels/rabat-oumlil-hotel.jpg" class="img-fluid"
                          alt="Berry Lace Dress">
                     <div>
                         <a href="#" class="btn">Zoom</a>
                         <a href="#" class="btn">View</a>
                     </div>
                 </div>
-                <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-                <div class="pi-price">$29.00</div>
-                <a href="javascript:;" class="btn add2cart">Add to cart</a>
+                <h3><a href="shop-item.html">Hotel Oumlil - Rabat</a></h3>
+                <div class="pi-price">499 <sup>.99</sup> MAD</div>
+                <a href="#" class="btn add2cart">Add to cart</a>
             </div>
         </div>
         <div class="col-md-4">
             <div class="product-item">
                 <div class="pi-img-wrapper">
-                    <img src="http://keenthemes.com/assets/bootsnipp/k3.jpg" class="img-fluid"
-                         alt="Berry Lace Dress">
+                    <img src="images/hotels/terrasse-e.jpg" class="img-fluid">
                     <div>
                         <a href="#" class="btn">Zoom</a>
                         <a href="#" class="btn">View</a>
                     </div>
                 </div>
-                <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-                <div class="pi-price">$29.00</div>
-                <a href="javascript:;   " class="btn add2cart">Add to cart</a>
+                <h3><a href="#">Euphoriad - Tanger</a></h3>
+                <div class="pi-price">999 <sup>.99</sup> MAD</div>
+                <a href="#" class="btn add2cart">Add to cart</a>
             </div>
         </div>
     </div>
+
     <div class="d-flex justify-content-center mt-5 mb-5">
-        <div class="spinner-grow text-success" role="status">
+        <div class="spinner-grow text-warning" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
@@ -196,7 +248,84 @@
         </nav>
     </div>
 </div>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- Footer -->
+<footer class="page-footer font-small bg-footer " style="">
+    <!-- Footer Links -->
+    <div class="container text-center text-light text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+                <!-- Content -->
+                <h5 class="text-uppercase">COUPE D'AFRIQUE 2019</h5>
+                <p>We are together <i class="em em-flag-ma"></i> to improve to all the world <i
+                        class="em em-earth_africa"></i>
+                    than we have the <i class="em em-moneybag"></i> power and the ability to organize <i
+                            class="em em-checkered_flag"></i>
+                    the CAF on the best condition <i class="em em---1"></i>
+                </p>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-skype"></i></a>
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <!-- Links -->
+                <h5 class="text-uppercase">Infos</h5>
+                <ul class="list-unstyled text-light">
+                    <li>
+                        <a href="#!">Maroc</a>
+                    </li>
+                    <li>
+                        <a href="#!">CAF - 2019</a>
+                    </li>
+                    <li>
+                        <a href="#!">Contactez-nous</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <!-- Links -->
+                <h5 class="text-uppercase">Liens rapides</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#" class="text-success">A propos</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-success">Matches</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-success">Sponsores</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <div class="container">
+        <div class="dropdown-divider"></div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-light">© 2019 Copyright:
+        <a href="#" class="text-info">www.caf.ma</a>
+    </div>
+</footer>
+<!-- Footer -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<script src="app.js"></script>
+<script>
+    $('.dropdown').dropdown()
+</script>
 
 </body>
 </html>

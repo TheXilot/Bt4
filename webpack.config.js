@@ -3,17 +3,12 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 const fs = require('fs')
 
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 // const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 // const nodeExternals = require('webpack-node-externals'); // Remove node_modules when creating the bundle
-
-//Env variables
-// const compileMode = env.mode //? process.env.mode : "development"
-// const isWatched = env.watch //? process.env.watch : "Watch"
-
 
 function generateHtmlPlugins(templateDir) {
     // Read files in template directory
@@ -77,10 +72,6 @@ module.exports = {
                     },
                 ]
             },
-            // {
-            //     test: /\.(mp4)$/i,
-            //     use: 'file-loader'
-            // },
             {
                 test: /\.html$/,
                 use: [{

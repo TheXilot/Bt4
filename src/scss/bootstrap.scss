@@ -1,7 +1,7 @@
 // Import Font or Icons
 //import Custom Variables
 @import 'variables';
-// Boostratp v4
+// Bootstrap v4
 @import "~bootstrap/scss/bootstrap";
 
 .nav-link {
@@ -163,10 +163,20 @@ img {
   }
 }
 
+footer {
+}
+
 .bg-footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(88, 84, 60, 0.75)), url(../images/art2.png) center center repeat;
+  background: #282828 url('../images/curve.svg') no-repeat;
   background-size: contain;
-  box-shadow: 1px 2px 10px 10px #ddd;
+  //box-shadow: 1px 2px 10px 10px #ddd;
+  padding-top: 160px;
+}
+
+.path-footer {
+  background: #ffd;
+  height: 30px;
+  top: 0;
 }
 
 .map {
@@ -179,41 +189,38 @@ img {
   padding: 0;
 }
 
-header {
+header#h-contact {
   position: relative;
   //background-color: black;
   height: 75vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
-}
-
-header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-header .container {
-  position: relative;
-  z-index: 2;
-}
-
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
 }
 
 main#contactus {
@@ -223,9 +230,8 @@ main#contactus {
   z-index: 3;
   right: 33%;
   left: 33%;
-  top: 60%;
+  top: 90%;
   transform: translateX(-33%) translateY(-33%);
-
   border-radius: .28571429rem;
 }
 
@@ -247,10 +253,23 @@ main#contactus {
 @import "procuct_card";
 
 .bg-hotel {
-  background: linear-gradient(rgba(232, 232, 232, 0.04), rgba(27, 66, 17, 0.13)), url(../images/hotels-cover.jpg) center bottom no-repeat;
+  background: linear-gradient(rgba(232, 232, 232, 0.04), rgba(27, 66, 17, 0.13)), url(../images/hotels/bg-hotel.jpg) center center no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 400px;
   border-radius: 0;
   margin-bottom: 60px;
-  clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+  border-bottom: #e84d1c solid 6px;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+}
+
+nav:not([aria-label='breadcrumb'] ) {
+  .active {
+    border-bottom: 2px solid #e84d1c;
+  }
+}
+
+.social-notwork {
+  .product-item {
+    width: 150px;
+  }
 }
