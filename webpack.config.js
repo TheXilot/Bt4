@@ -61,22 +61,26 @@ module.exports = {
 
             {
                 test: /\.(png|jpg|gif|svg)$/,
-                use: [{
-                    loader: 'url-loader',
-                    options: {
-                        limit: 8192,
-                        name: '[name].[hash:7].[ext]'
-                    }
-                },
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 8192,
+                            name: '[name].[hash:7].[ext]'
+                        }
+                    },
                     {
                         loader: 'img-loader',
                         options: {
                             enabled: true
                         }
-                    }
+                    },
                 ]
             },
-
+            // {
+            //     test: /\.(mp4)$/i,
+            //     use: 'file-loader'
+            // },
             {
                 test: /\.html$/,
                 use: [{
@@ -94,9 +98,7 @@ module.exports = {
                     loader: "css-loader"
                 }, {
                     loader: "sass-loader",
-                    options: {
-                        // includePaths: ["absolute/path/a", "absolute/path/b"]
-                    }
+                    options: {}
                 }]
             }
         ],
@@ -107,6 +109,10 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: './src/index.html',
             filename: './index.html',
+        }),
+        new HtmlWebPackPlugin({
+            template: './src/contact.html',
+            filename: './contact.html',
         }),
 
 

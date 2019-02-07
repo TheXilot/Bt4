@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactez nous !</title>
+
+    <link rel="stylesheet" href="bootstrap.bundle.css" type="text/html">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar fixed-top  bg-navbar  navbar-expand-md">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="logo" height="40"/>
+        </a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler bg-light collapsed" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar"
+                id="btnNav">
+            <span class="fa fa-bars" aria-hidden="true"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        <span class="fa fa-home" aria-hidden="true"></span>
+                        Accueil
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                        Matchs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-info" aria-hidden="true"></i>
+                        A propos de nous
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">
+                        <i class=" fa fa-volume-control-phone" aria-hidden="true"></i>
+                    Contactez-nous
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="overlay"></div>
+
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="/videos/bg_contact.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <h1 class="display-3">Contactez nous</h1>
+                <p class="lead mb-0">CAF 2019</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container position-absolute d-flex justify-content-center" id="contactus">
+    <div class="row mt-5">
+        <div class="col-md-6 maps" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6950462.372217663!2d-11.644209031036022!3d31.721891679372035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0xd9d39381c42cffc3!2sMorocco!5e0!3m2!1sen!2sma!4v1549450198330" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-md-6">
+            <h2 class="text-uppercase mt-3 font-weight-bold text-center">Contactez-nous</h2>
+            <hr>
+            <form action="#">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-2" placeholder="Nom" required>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-2" placeholder="prénom" required>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <input type="email" class="form-control mt-2" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <input type="tel" class="form-control mt-2" placeholder="Tel" required>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <textarea class="form-control" id="msg" placeholder="Message ..." rows="6   " required></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    J'accepte les conditions
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-outline-success btn-lg btn-block" type="submit">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            Envoyer !
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<script src="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Responsive-Image-Maps-image-map-js/image-map.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<script src="https://www.google.com/maps/embed/v1/MODE?key=AIzaSyAmRLQ3cUdql_AY43-Xsj5wxAGnUkCWk4M"></script>
+<script src="app.js"></script>
+
+<script>
+    // var mapOptions = {
+    //     center: new google.maps.LatLng(40.435833800555567, -78.44189453125),
+    //     mapTypeId: google.maps.MapTypeId.ROADMAP,
+    //     zoom: 11
+    // };
+    // var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+</script>
+
+
+</body>
+</html>
