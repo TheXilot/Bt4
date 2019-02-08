@@ -1,6 +1,6 @@
-// console.log('App is mounted !')
 (function () {
     const barBtn = document.getElementById('btnNav');
+    const nav = document.querySelector('nav.navbar');
 
 
     const fixNav = () => {
@@ -13,28 +13,20 @@
     }
 
     const fixNavColor = () => {
-        const nav = document.querySelector('nav.navbar');
-        // const navLink = document.querySelectorAll('a.nav-link');
         const barClass = barBtn.classList;
         const navClass = nav.classList;
         const hasDark = navClass.contains('bg-light');
 
-        if (barClass.contains('collapsed') && !hasDark) {
+        if (barClass.contains('collapsed') && !hasDark)
             navClass.add('bg-navbar__light');
-            // navLink.forEach(el => {
-            //     el.style.color = 'black'
-            // });
-        }
-        else if (!barClass.contains('collapsed') && hasDark) {
+
+        else if (!barClass.contains('collapsed') && hasDark)
             navClass.remove('bg-navbar__light');
-            // navLink.forEach(el => {
-            //     el.style.color = 'white'
-            // });
-        }
     }
 
-    barBtn.addEventListener('click', fixNavColor);
-    window.addEventListener('scroll', fixNav);
-
+    if (document.body.contains(nav)) {
+        barBtn.addEventListener('click', fixNavColor);
+        window.addEventListener('scroll', fixNav);
+    }
 
 })()

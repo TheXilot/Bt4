@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 const fs = require('fs')
 
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 // const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -27,6 +27,7 @@ function generateHtmlPlugins(templateDir) {
 }
 
 const htmlPlugins = generateHtmlPlugins('./src/modal/')
+const examples = generateHtmlPlugins('./src/examples/')
 
 module.exports = {
 
@@ -111,15 +112,15 @@ module.exports = {
         }),
 
 
-        // new MiniCssExtractPlugin({
-        //     filename: 'index.css', chunkFilename: 'index.css',
-        // }),
+        new MiniCssExtractPlugin({
+            filename: 'index.css', chunkFilename: 'index.css',
+        }),
 
         new ExtractTextPlugin({ // define where to save the file
             filename: '[name].bundle.css',
             allChunks: true,
         }),
-    ].concat(htmlPlugins),
+    ].concat(htmlPlugins, examples),
 
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.scss', '.css'],

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Grid with Breakpoints</title>
+    <!--<link rel="stylesheet" href="../bootstrap.bundle.css" type="text/html">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Add Emoji ! https://afeld.github.io/emoji-css/ -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+    <style>
+        .box {
+            background: #dddddd;
+            height: 100px;
+            width: 100%;
+            border: 1px solid salmon;
+        }
+
+        .small-box {
+            background: #ffd858;
+            height: 70px;
+            width: 70px;
+            border: 1px solid salmon;
+        }
+
+        .blue {
+            background: #066aff;
+        }
+
+        .red {
+            background: #ff4341;
+        }
+
+        .purple {
+            background: var(--teal);
+        }
+
+        .yellow {
+            background: #ffeb47;
+        }
+
+        .sweet {
+            background: #ff4061;
+        }
+
+        .brown {
+            background: chocolate;
+        }
+
+        .h-auto {
+            height: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <!--<div class="container-fluid">-->
+    <h2 class="text-center text-info text-capitalize mt-5 display-3"> Grid using Breakpoints</h2>
+    <hr>
+
+    <p class="lead text-success">Default grid row(1)</p>
+
+    <div class="row">
+        <div class="box yellow col-12">(1) 12</div>
+        <div class="box blue col-4">(2) 4</div>
+        <div class="box purple col-8">(3) 8</div>
+        <div class="box red col-6 offset-3">(4) 6 + offset-3 (margin-left:25%)</div>
+    </div>
+
+    <hr>
+    <h2 class="lead text-success"> Grid Adapted with (Mobile/Laptop/large screen) </h2>
+
+    <div class="row">
+        <div class="box  blue col-sm-12 col-md-4 col-lg-3">1</div>
+        <div class="box  purple col-sm-12 col-md-4 col-lg-3">2</div>
+        <div class="box  yellow col-sm-12 col-md-4 col-lg-3">3</div>
+        <div class="box  red col-sm-12 col-md-4 col-lg-3">4</div>
+    </div>
+    <hr>
+
+    <h2 class="display-3 text-success text-center">Nested Grid </h2>
+    <div class="row">
+        <p class="lead text-success">(without Flex)</p>
+        <div class="box m-1 blue col-12 h-auto mb-1">
+            <div class="row">
+                <div class="small-box col-sm-2 col-md-3 col-lg-4"></div>
+                <div class="small-box col-sm-3 col-md-3 col-lg-4"></div>
+                <div class="small-box col-sm-2 col-md-3 col-lg-4"></div>
+            </div>
+        </div>
+        <h2 class="lead text-success" id="nested">(with Flex) <a href="grid1.html"> Flex examples</a></h2>
+        <hr>
+        <div class="box m-1 sweet col-12 h-auto mb-1">
+            <div class="row justify-content-around h-auto">
+                <div class="small-box col-sm-2 col-md-3 col-lg-4"></div>
+                <div class="small-box col-sm-3 col-md-3 col-lg-4"></div>
+                <div class="small-box col-sm-2 col-md-3 col-lg-4"></div>
+            </div>
+        </div>
+
+        <div class="box m-1 brown col-12 h-auto mb-1">
+            <div class="row justify-content-center h-auto">
+                <div class="small-box col-sm-2 col-md-3 col-lg-4"></div>
+                <div class="small-box col-sm-3 col-md-3 col-lg-4"></div>
+            </div>
+            <div class="row justify-content-center h-auto">
+                <div class="small-box col-sm-3 col-md-2 col-lg-8"></div>
+                <div class="small-box col-sm-2 col-md-6  col-lg-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box purple col-12 col-md-6 h-auto mb-1">
+        <div class="row justify-content-start">
+            <div class="small-box col-sm-2 col-md-3 col-lg-4"></div>
+            <div class="small-box col-sm-3 col-md-3 col-lg-4"></div>
+        </div>
+    </div>
+
+    <div class="box  red col-12 col-md-6 h-auto mb-1">
+        <div class="row justify-content-end">
+            <div class="small-box col-sm-2 col-md-3 col-lg-4"></div>
+            <div class="small-box col-sm-2 col-md-3 col-lg-4"></div>
+        </div>
+    </div>
+
+    <div class="box purple col-12 mb-1" style="height: 300px">
+        <div class="row h-100 align-items-center">
+            <div class="small-box col-sm-2 col-md-3 col-lg-4"></div>
+            <div class="small-box col-sm-2 col-md-3 col-lg-4"></div>
+            <div class="small-box col-sm-2 col-md-3 col-lg-4"></div>
+        </div>
+    </div>
+</div>
+<hr>
+
+
+
+</body>
+</html>
